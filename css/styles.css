@@ -225,7 +225,7 @@ html, body {
 }
 
 .para {
-    color: #a2b2c8;
+    color: #485a74;
     font-size: 18px;
 }
 
@@ -359,7 +359,7 @@ a.contact_value {
     left: 0px;
     right: 0px;
     z-index: 3;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.712);
     -webkit-box-shadow: 0px 2px 2px 0 rgba(0,0,0,.25);;
             box-shadow: 0px 2px 2px 0 rgba(0,0,0,.25);;
 }
@@ -407,6 +407,7 @@ a.contact_value {
     margin: 0 auto;
     padding: 20px;
     height: 72px;
+    
 }
 
 .menu_list {
@@ -1170,6 +1171,8 @@ a.contact_value {
     text-align: center;
     overflow: hidden;
     opacity: .5;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .footer_logo {

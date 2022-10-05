@@ -1,9 +1,9 @@
 var team = [
     {
-        "name": "Ido Ofir",
-        "role": "Full-Stack Developer",
-        "img": "ido.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+        "name": "Gagan Gulyani",
+        "role": "Co-Lead",
+        "img": "1.jpeg",
+        "description": "Backend Developer (Flask), An Artist, Community Manager of HTM (HackTheMountains) and Content Creator.",
         "socialLinks": [
             {
                 "src": "linkedin.svg",
@@ -20,7 +20,7 @@ var team = [
         ]
     },
     {
-        "name": "Nadav Shaar",
+        "name": "OCD Shaar",
         "role": "Front-End Developer",
         "img": "nadav.jpg",
         "description": "User Interface - oriented Front-End Developer, dedicated to creating and optimizing interactive and user-friendly applications.",
@@ -100,14 +100,14 @@ var team = [
         ]
     },
     {
-        "name": "Yakov Rakhamimov",
-        "role": "Front-End Developer",
-        "img": "yakov.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+        "name": "Rishabh Bansal",
+        "role": "Co-Lead",
+        "img": "2.jpg",
+        "description": "Involved with communities since 2017. He is a MLH mentor, an Engineer at Oracle and has been associated with various communities like GDG Cloud New Delhi, DSC VIT Vellore.",
         "socialLinks": [
             {
                 "src": "linkedin.svg",
-                "href": "#"
+                "href": "https://twitter.com/RishabBansal400"
             },
             {
                 "src": "pinterest.svg",
