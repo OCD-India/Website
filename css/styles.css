@@ -457,6 +457,13 @@ a.contact_value {
 .read_more_button {
     width: 140px;
 }
+.register_button {
+   display: flex;
+    justify-content: center;
+    /* max-width:150px; */
+    padding: 0px 5px;
+    
+}
 
 .intro_text_block {
     width: 60%;

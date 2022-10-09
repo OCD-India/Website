@@ -7,98 +7,19 @@ var team = [
         "socialLinks": [
             {
                 "src": "linkedin.svg",
-                "href": "#"
+                "href": "https://twitter.com/GaganGulyani",
             },
             {
                 "src": "pinterest.svg",
-                "href": "#"
+                "href": "https://twitter.com/GaganGulyani",
             },
             {
                 "src": "facebook.svg",
-                "href": "#"
+                "href": "https://twitter.com/GaganGulyani",
             }
         ]
     },
-    {
-        "name": "OCD Shaar",
-        "role": "Front-End Developer",
-        "img": "nadav.jpg",
-        "description": "User Interface - oriented Front-End Developer, dedicated to creating and optimizing interactive and user-friendly applications.",
-        "socialLinks": [
-            {
-                "src": "linkedin.svg",
-                "href": "#"
-            },
-            {
-                "src": "pinterest.svg",
-                "href": "#"
-            },
-            {
-                "src": "facebook.svg",
-                "href": "#"
-            }
-        ]
-    },
-    {
-        "name": "Ilay Ofir",
-        "role": "Full-Stack Developer",
-        "img": "ilay.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
-        "socialLinks": [
-            {
-                "src": "linkedin.svg",
-                "href": "#"
-            },
-            {
-                "src": "pinterest.svg",
-                "href": "#"
-            },
-            {
-                "src": "facebook.svg",
-                "href": "#"
-            }
-        ]
-    },
-    {
-        "name": "Yoav Leshem",
-        "role": "Front-End Developer",
-        "img": "yoav.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
-        "socialLinks": [
-            {
-                "src": "linkedin.svg",
-                "href": "#"
-            },
-            {
-                "src": "pinterest.svg",
-                "href": "#"
-            },
-            {
-                "src": "facebook.svg",
-                "href": "#"
-            }
-        ]
-    },
-    {
-        "name": "Ziv Zerr",
-        "role": "Full-Stack Developer",
-        "img": "ziv.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
-        "socialLinks": [
-            {
-                "src": "linkedin.svg",
-                "href": "#"
-            },
-            {
-                "src": "pinterest.svg",
-                "href": "#"
-            },
-            {
-                "src": "facebook.svg",
-                "href": "#"
-            }
-        ]
-    },
+
     {
         "name": "Rishabh Bansal",
         "role": "Co-Lead",
@@ -107,15 +28,15 @@ var team = [
         "socialLinks": [
             {
                 "src": "linkedin.svg",
-                "href": "https://twitter.com/RishabBansal400"
+                "href": "https://twitter.com/RishabBansal400",
             },
             {
                 "src": "pinterest.svg",
-                "href": "#"
+                "href": "https://twitter.com/RishabBansal400",
             },
             {
                 "src": "facebook.svg",
-                "href": "#"
+                "href": "https://twitter.com/RishabBansal400",
             }
         ]
     }
@@ -135,9 +56,9 @@ function displayMember(memberName) {
     document.querySelector('.about_selected_member_container .text_block_main_title').innerHTML = member.name;
     document.querySelector('.about_selected_member_container .text_block_sub_title').innerHTML = member.role;
     document.querySelector('.about_selected_member_container .para').innerHTML = member.description;
-    document.querySelector('.about_team_img.about_team_img_bounce').classList.remove('about_team_img_bounce');
-    document.querySelector('.about_team_img.about_team_img_' + (memberIndex + 1)).classList.add('about_team_img_bounce');
-    document.querySelector('.about_selected_member_social').innerHTML = '';
+    document.querySelector('.about_team_img .about_team_img_bounce').classList.remove('about_team_img_bounce');
+    document.querySelector('.about_team_img .about_team_img_' + (memberIndex + 1)).classList.add('about_team_img_bounce');
+    document.querySelector('.about_selected_member_social').innerHTML ="";
 
     member.socialLinks.forEach(function(sl) {
         var linkImg = document.createElement('img');
