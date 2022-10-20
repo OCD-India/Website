@@ -1,405 +1,231 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="./assets/logo2.png">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
-        <link rel="stylesheet" href="./css/styles.css" />
-        <link rel="stylesheet" href="./css/responsive.css" />
-        <title>
-            OCD
-        </title>
-    </head>
-    <body>
-        <header class="header">
-            <nav class="nav">
-                <div class="flex_row align_center">
-                    <img class="logo" src="./assets/logo2.png" />
-                    <span class="logo_label">OCD</span>
-                </div>
-                <button class="menu" onclick="this.classList.toggle('opened');">
-                    <svg width="32" height="32" viewBox="0 0 100 100">
-                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" ></path>
-                        <path class="line line2" d="M 20,50 H 80" ></path>
-                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" ></path>
-                    </svg>
-                </button>
-                <ul class="flex_row menu_list">
-                    <li class="nav_item">
-                        <a href="#home">home</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#tech">tech</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#services">services</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#experience">experience</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#about">about</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact">contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <section id="home" class="section intro_section background_image">
-                <svg class="intro_shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="left: 0; transform: rotate3d(0,1,0,180deg);"><path class="shape-fill shape-fill-contrast" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path></svg>
-                <div class="section_inner intro_inner flex_row">
-                    <div class="rocket_container">
-                        <div class="rocket_background">
-                        </div>
-                        <img data-intersection-id="rocket_img" data-intersection-threshold="0.3" class="rocket_image start_pos" src="./assets/4.png">
-                    </div>
-                    <div class="intro_text_block">
-                        <h1 class="big_title start_pos">Open Community Of <br> Developers</h1>
-                        <h2 class="light_sub_title">Take your community to the next level !</h2>
-                        <p class="para">
-                            We're a group of passionate community advocates who love to build, grow and learn with the community! We specialise in creating and managing communities for developers, designers, and tech enthusiasts.
-                        </p>
-                        <a href="https://bit.ly/3Rq0EV5" target="_blank" rel="noopener noreferrer" class="button read_more_button">Register Now</a>
-                    </div>
-                    
-                </div>
-            </section>
-            <section id="tech" class="section tech_section">
-                <div class="section_inner tech_inner flex_row flex_column_mobile">
-                    <div class="flex_column tech_left">
-                        <div data-intersection-id="tech_decor_dots" data-intersection-threshold="0.3" class="tech_decor_dots start_pos"></div>
-                        <div class="tech_card start_pos paper flex_row flex_column_mobile">
-                            <div class="tech_card_left">
-                                <h3 class="text_block_main_title">Expertise</h3>
-                                <h3 class="text_block_sub_title">in all Domains</h3>
-                                <p class="para">
-                                    Cloud, Storage, Blockchain, AI, ML, AR/VR, IoT, Cyber Security, DevOps, Data Science, Web Dev , and more.
-                                </p>
-                                <div class="tech_card_left_img_wrapper">
-                                    <img src="./assets/tech/webpack.svg" />
-                                </div>
-                            </div>
-                            <div data-intersection-id="tech_card_right" data-intersection-threshold="0" class="tech_card_right flex_row_mobile start_pos">
-                                <img src="./assets/tech/javascript.svg" />
-                                <img src="./assets/tech/es6.svg" />
-                                <img src="./assets/tech/node-sass.svg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex_column tech_right">
-                        <img data-intersection-id="tech_globe_img" data-intersection-threshold="0.3" class="tech_globe_img start_pos" src="./assets/tech-globe.svg" />
-                        <h3 class="text_block_main_title">A complete solution</h3>
-                        <h3 class="text_block_sub_title">To keep you ahead of everyone</h3>
-                        <p class="para">
-                            Here's what we offer to our community members
-                        </p>
-                        <div class="flex_row tech_details">
-                            <div class="flex_column">
-                                <div class="tech_detail">
-                                    <span data-intersection-id="tech_detail_icon" data-intersection-threshold="0.3" class="tech_detail_icon start_pos">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity stroke-primary" style="stroke: #8ed6fb"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-                                    </span>
-                                    <div class="flex_column">
-                                        <span class="tech_detail_label">Learn</span>
-                                        <p class="para">Relevant Skills </p>
-                                    </div>
-                                </div>
-                                <div class="tech_detail">
-                                    <span data-intersection-id="tech_detail_icon" data-intersection-threshold="0.3" class="tech_detail_icon start_pos">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap stroke-primary"  style="stroke: #8ed6fb"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                                    </span>
-                                    <div class="flex_column">
-                                        <span class="tech_detail_label">Network</span>
-                                        <p class="para">Globally</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex_column">
-                                <div class="tech_detail">
-                                    <span data-intersection-id="tech_detail_icon" data-intersection-threshold="0.3" class="tech_detail_icon start_pos">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload-cloud stroke-primary"  style="stroke: #8ed6fb"><polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>
-                                    </span>
-                                    <div class="flex_column">
-                                        <span class="tech_detail_label">Pitch</span>
-                                        <p class="para">Your ideas</p>
-                                    </div>
-                                </div>
-                                <div class="tech_detail">
-                                    <span data-intersection-id="tech_detail_icon" data-intersection-threshold="0.3" class="tech_detail_icon start_pos">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hexagon stroke-primary" style="stroke: #8ed6fb"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-                                    </span>
-                                    <div class="flex_column">
-                                        <span class="tech_detail_label">Show-off</span>
-                                        <p class="para">Your Skills</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="services" data-intersection-id="services" data-intersection-threshold="0.7" class="section services_section">
-                <div class="section_inner">
-                    <div data-intersection-id="services_decor_circle" data-intersection-threshold="0.7" class="services_decor_circle start_pos"></div>
-                    <div data-intersection-id="services_decor_ring" data-intersection-threshold="0.7" class="services_decor_ring start_pos"></div>
-                    <div class="flex_column services_container">
-                        <span class="section_title">All you need in one place</span>
-                        <div class="flex_row flex_wrap">
-                            <div class="service">
-                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/plan.svg" />
-                                <span class="service_title">strategy</span>
-                                <p class="para text_center">
-                                    Strategise your events and plan them in a way that they are successful and impactful.
-                                </p>
-                            </div>
-                            <div class="service">
-                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/cup.svg" />
-                                <span class="service_title">top quality</span>
-                                <p class="para text_center">
-                                    Get access to the best speakers and mentors in the industry to help you grow.
-                                </p>
-                            </div>
-                            <div class="service">
-                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/target.svg" />
-                                <span class="service_title">accuracy</span>
-                                <p class="para text_center">
-                                    We reply on our experience and data to plan and execute your events.
-                                </p>
-                            </div>
-                            <div class="service">
-                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/clock.svg" />
-                                <span class="service_title">on time</span>
-                                <p class="para text_center">
-                                    Premium services at affordable prices and on time delivery.
-                                </p>
-                            </div>
-                            <div class="service">
-                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/growth.svg" />
-                                <span class="service_title">scalable</span>
-                                <p class="para text_center">
-                                    Get access to nation-wide network of venues and resources to host events.
-                                </p>
-                            </div>
-                            <div class="service">
-                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/test.svg" />
-                                <span class="service_title">hiring</span>
-                                <p class="para text_center">
-                                    Pick the finest of talent from our pool of attendees and hire them.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="experience" data-intersection-id="experience" data-intersection-threshold="0.5" class="section exp_section background_image">
-                <svg class="exp_svg_divider" preserveAspectRatio="xMinYMin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
-                    <path fill="#f8fafc" fill-opacity="1" d="M0,96L120,106.7C240,117,480,139,720,144C960,149,1200,139,1320,133.3L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
-                </svg>
-            <div class="section_inner exp_inner">
-                    <div class="exp_info">
-                        <h3 class="big_title start_pos">What are you waiting for?</h3>
-                        <p class="para text_center">
-                            Be assured! Our hair turned grey running communities and providing value to people around us. Join us today and feel the magic of a dedicated community!
-                        </p>
-                        <div class=" text_center">
-                            <a href="https://bit.ly/3Rq0EV5" class="button register_button text-center" target="_blank" rel="noopener noreferrer">Register Now</a>
-                            
+<html lang="en" class="no-js">
 
-                             <img src="" alt=""> 
-    
-                        </div>
-                        
-                        
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open Community of Developers (OCD)</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <style>
+        .header-logo-image {
+            filter: invert(70%) sepia(74%) saturate(6041%) hue-rotate(196deg) brightness(100%) contrast(100%);
+        }
+    </style>
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="shortcut icon" href="src/images/logo.ico" type="image/x-icon">
+</head>
+
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="/">
+                                <img class="header-logo-image" src="dist/images/logo.svg" alt="OCD">
+                            </a>
+                        </h1>
                     </div>
-                     <!-- <div class="flex_row flex_wrap">
-                        <div class="align_center exp_box">
-                            <div class="flex_row">
-                                <span 
-                                    data-intersection-id="exp_num" 
-                                    data-intersection-threshold="0.5" 
-                                    data-animate-number-from="0" 
-                                    data-animate-number-to="25" 
-                                    data-animate-number-duration="100" 
-                                    class="exp_amount"
-                                ></span>
-                                <span class="exp_topic">+</span>
-                            </div>
-                            <span class="exp_topic">Projects</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">Open Community of Developers (OCD)</h1>
+                            <p class="hero-paragraph">Welcome to Open Community of Developers!</p>
+
+                            <p class="hero-paragraph">OCD is a community driven organization which assists next
+                                generation leaders and communities to grow in India 🇮🇳</p>
+
+                            <div class="hero-cta"><a class="button button-primary"
+                                    href="https://bit.ly/3Rq0EV5">Register Now!</a><a class="button"
+                                    href="https://twitter.com/ocd_india">Get in touch</a></div>
                         </div>
-                        <div class="align_center exp_box">
-                            <div class="flex_row">
-                                <span 
-                                    data-intersection-id="exp_num" 
-                                    data-intersection-threshold="0.5" 
-                                    data-animate-number-from="0" 
-                                    data-animate-number-to="100" 
-                                    data-animate-number-duration="1000" 
-                                    class="exp_amount"
-                                ></span>
-                                <span class="exp_topic">+</span>
-                            </div>
-                            <span class="exp_topic">Institutions</span>
+                        <div class="hero-figure anime-element">
+                            <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+                                <rect width="528" height="396" style="fill:transparent;" />
+                            </svg>
+                            <div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+                            <div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+                            <div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+                            <div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+                            <div class="hero-figure-box hero-figure-box-05"></div>
+                            <div class="hero-figure-box hero-figure-box-06"></div>
+                            <div class="hero-figure-box hero-figure-box-07"></div>
+                            <div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+                            <div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+                            <div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
                         </div>
-                        <div class="align_center exp_box">
-                            <div class="flex_row">
-                                <span 
-                                    data-intersection-id="exp_num" 
-                                    data-intersection-threshold="0.5" 
-                                    data-animate-number-from="0" 
-                                    data-animate-number-to="300" 
-                                    data-animate-number-duration="100" 
-                                    class="exp_amount"
-                                ></span>
-                                <span class="exp_topic">+</span>
-                            </div>
-                            <span class="exp_topic">Community Members</span>
-                        </div>
-                        <div class="align_center exp_box">
-                            <div class="flex_row">
-                                <span 
-                                    data-intersection-id="exp_num" 
-                                    data-intersection-threshold="0.5" 
-                                    data-animate-number-from="0" 
-                                    data-animate-number-to="12" 
-                                    data-animate-number-duration="100" 
-                                    class="exp_amount"
-                                ></span>
-                                <span class="exp_topic">+</span>
-                            </div>
-                            <span class="exp_topic">Hackathons</span>
-                        </div>
-                    </div>  -->
-                </div> 
-                <svg class="exp_svg_divider" preserveAspectRatio="xMaxYMax" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#ffffff" fill-opacity="1" d="M0,256L120,229.3C240,203,480,149,720,138.7C960,128,1200,160,1320,176L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-                </svg>
+                    </div>
+                </div>
             </section>
-            <section id="about" class="section about_section">
-                <div class="section_inner about_inner flex_row">
-                    <div class="flex_row">
-                        <div class="flex_row about_section_left">
-                            <div class="about_shape start_pos" data-intersection-id="about_shape" data-intersection-threshold="0.7">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 249.28 253.71">
-                                    <g id="Capa_2" data-name="Capa 2"><g id="OBJECTS"><path class="cls-1" d="M236.5,78.38a75.26,75.26,0,0,0-7.74-9.67l0,0S182.91,16.47,105.14,2l0,0A83.91,83.91,0,0,0,4.53,69.71C-11.34,147,19.55,209,19.73,209.4a75,75,0,0,0,6,10.77c19.06,28.33,54.33,39.57,86.73,30.43,0,0,52.47-12.9,111.35-71.37h0C251.68,152.56,257.84,110.1,236.5,78.38Z"></path></g></g>
-                                </svg>
-                            </div>
-                            <div class="about_selected_member_container">
-                                <img class="about_selected_member_avatar" src="./assets/logo.png" />
-                                <h3 class="text_block_main_title">Open Community </h3>
-                                <h3 class="text_block_sub_title">for Developers</h3>
-                                <p class="para">
-                                    Connect with us right here to learn more about what we are doing and how we will help you out to scale, grow and enrich your community!
-                                </p>
-                                <div class="flex_row about_selected_member_social">   
-                                    <a href="https://twitter.com/ocd_india" class="about_social_icon" target="_blank" rel="noopener noreferrer">
-                                        <img src="./assets/social-icons/linkedin.svg" />
-                                        
-                                    </a>
-                                    
-                                    <a href="https://twitter.com/ocd_india" class="about_social_icon" target="_blank" rel="noopener noreferrer">
-                                        <img src="./assets/social-icons/twitter.svg" />
-                                    </a>
-                                </div>
-                            </div>
+
+            <section class="pricing section">
+                <div class="container-sm">
+                    <div class="pricing-inner section-inner">
+                        <div class="pricing-header text-center">
+                            <h2 class="section-title mt-0" id="faq">FAQs</h2>
+                            <p class="section-paragraph mb-0">
+                                Things you need to know about OCD
+                            </p>
                         </div>
-                        <div class="flex_column flex_column_reverse_mobile">
-                            <div class="about_info">
-                                <h3 class="text_block_main_title">Who are we?</h3>
-                                <h3 class="text_block_sub_title">Meet the team behind the magic</h3>
-                                <p class="para">
-                                    Get in touch with the hardworking leaders of OCD with a passion for helping developers and communities grow. 
-                                </p>
-                            </div>
-                            <div class="about_map_wrapper">
-                                <img class="about_map_img" src="./assets/map.svg" />
-                                <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_1 start_pos" src="./assets/team/1.jpeg" title="Gagan Gulyani" onclick="displayMember('Gagan Gulyani')" />
-                                <!-- <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_2 about_team_img_bounce start_pos" src="./assets/team/nadav.jpg" title="Nadav Shaar" onclick="displayMember('Nadav Shaar')" /> -->
-                                <!-- <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_3 start_pos" src="./assets/team/ilay.jpg" title="Ilay Ofir" onclick="displayMember('Ilay Ofir')" /> -->
-                                <!-- <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_4 start_pos" src="./assets/team/yoav.jpg" title="Yoav Leshem" onclick="displayMember('Yoav Leshem')" /> -->
-                                <!-- <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_5 start_pos" src="./assets/team/ziv.jpg" title="Ziv Zerr" onclick="displayMember('Ziv Zerr')" /> -->
-                                <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_6 start_pos" src="./assets/team/2.jpg" title="Rishabh Bansal" onclick="displayMember('Rishabh Bansal')" />
+                        <div class="pricing-tables-wrap">
+                            <div class="pricing-table">
+                                <div class="pricing-table-inner is-revealing">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header pb-24">
+                                            <div class="pricing-table-price"><span
+                                                    class="pricing-table-price-currency h2">$</span><span
+                                                    class="pricing-table-price-amount h1">0</span><span
+                                                    class="text-xs">/month (free)</span></div>
+                                        </div>
+                                        <div class="pricing-table-features-title text-xs pt-24 pb-24">What you will get
+                                            👇
+                                        </div>
+                                        <ul class="pricing-table-features list-reset text-xs">
+                                            <li>
+                                                <span>Info about Technical Events throughout Delhi NCR</span>
+                                            </li>
+                                            <li>
+                                                <span>Networking with Professionals</span>
+                                            </li>
+                                            <li>
+                                                <span>Volunteering Opportunities in Partnered Events</span>
+                                            </li>
+                                            <li>
+                                                <span>Outreach and Community Partnership</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-table-cta mb-8">
+                                        <a class="button button-primary button-shadow button-block"
+                                            href="https://bit.ly/3Rq0EV5">Register Now!</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="contact" class="section contact_section">
-                <div class="section_inner contact_inner flex_row">
-                    <div class="flex_row flex_column_reverse_mobile">
-                        <div class="flex_row contact_left">
-                            <div data-intersection-id="sun_shape" data-intersection-threshold="0.75" class="sun_shape start_pos"></div>
-                            <div data-intersection-id="contact_decor_dots" data-intersection-threshold="0.75" class="contact_decor_dots start_pos"></div>
-                            <div data-intersection-id="contact_card" data-intersection-threshold="0.75" class="flex_column paper start_pos">
-                                <img src="./assets/take-off.jpg" />
-                                <div class="contact_form_container">
-                                    <!-- <span class="contact_label">Name</span> 
-                                    <span class="contact_value">Nadav Shaar</span> 
-                                    <span class="contact_label">Role</span> 
-                                    <span class="contact_value">Front-End developr</span>  -->
-                                    <span class="contact_label">Email</span> 
-                                    <a href="mailto:nadavshaar@gmail.com" class="contact_value">ocd@gmail.com</a>
-                                    <!-- <span class="contact_label">Address</span> 
-                                    <span class="contact_value">Israel, Afula</span>  -->
+
+            <section class="features section">
+                <div class="container">
+                    <div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap">
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="dist/images/feature-icon-01.svg" alt="Feature 01">
+                                    </div>
+                                    <h4 class="feature-title mt-24">How does Open Community of Developers help Community
+                                        Event organizers?</h4>
+                                    <p class="text-sm mb-0">We’ve got a team of seasoned community event organizers.
+                                        Depending upon the assistance required, we can work with the local community,
+                                        and provide them with complete support from planning, and organizing to running
+                                        the event.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="dist/images/feature-icon-03.svg" alt="Feature 03">
+                                    </div>
+                                    <h4 class="feature-title mt-24">What are the charges like for all these services?
+                                    </h4>
+                                    <p class="text-sm mb-0">It’s all free. We earn via corporate sponsorships, which we
+                                        bring for your events.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="dist/images/feature-icon-02.svg" alt="Feature 02">
+                                    </div>
+                                    <h4 class="feature-title mt-24">What kind of Services, Open Community of Developers
+                                        provides to the Event organizers?</h4>
+                                    <p class="text-sm mb-1">We have tons of services. Community Collaboration is one of
+                                        them. Where we work with the organizers from planning and organizing to running
+                                        the event.</p>
+
+                                    <p class="text-sm mb-0">Outreach Partnership is also there. Via our network of
+                                        regular participants, we can provide you with the outreach of your event. We
+                                        also have onsite support for the event.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex_row contact_right">
-                            <div class="flex_column contact_right_inner">
-                                <div class="contact_right_top">
-                                    <h3 class="text_block_main_title">Ready to take off?</h3>
-                                    <h3 class="text_block_sub_title">Contact us</h3>
-                                    <p class="para">
-                                        We come forward with just one aim, to help you grow and scale your community. We are here to help you out with our expertise and experience. To make a place for you in the world of developers and tech communities.
-                                    </p>
-                                </div>
-                                <div class="flex_row clouds_container">
-                                    <div class="cloud_1 start_pos" data-intersection-id="cloud_1" data-intersection-threshold="0.75">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" style="height: 128px;width: 128px;">
-                                            <path d="M109.65,53.48c0,0-0.01,0-0.01,0c0-0.07,0.01-0.14,0.01-0.21c0-9.55-7.74-17.3-17.3-17.3 c-1.23,0-2.43,0.13-3.58,0.38c-3.43-8.34-11.62-14.22-21.2-14.22c-7.19,0-13.6,3.32-17.8,8.5c-2.71-1.37-5.76-2.16-9-2.16 c-10.35,0-18.85,7.88-19.84,17.97C9.68,47.04,0.65,56.26,0.5,67.71C0.34,79.63,9.89,89.43,21.81,89.58 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,61.25,119.24,53.48,109.65,53.48 z" style="fill:#f1f4f8;width: 100%;"></path>
-                                            <path d="M119.85,56.79c3.93,3.97,1.15,13.07-1.55,16.04c-5.32,5.83-15.08,4.47-19,3.63 c-1.06-0.23-1.23-0.15-1.58,0.06c-0.31,0.19-0.45,0.49-0.79,1.2c-1.26,2.72-4.52,7.99-11.4,10.11c-7.17,2.21-13.93-1.16-17.09-3.17 c-1.2-0.76-1.25-0.78-1.79-0.77c-0.55,0.01-1.09,0.41-1.74,0.92c-2.86,2.25-9.39,6.22-19.46,5.64c-9.87-0.57-15.52-6.65-17.46-9.78 c-0.37-0.6-0.77-1.1-1.23-1.15c-0.53-0.05-1.12,0.49-1.56,0.93C21,84.54,7.78,85.77,3.4,78.8c4.46,7.15,11.35,10.69,18.42,10.78 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,65.73,124.44,59.97,119.85,56.79 z" style="fill:#B9CDD2;width: 100%;"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="cloud_2 start_pos" data-intersection-id="cloud_2" data-intersection-threshold="0.75">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" style="height: 128px;width: 128px;">
-                                            <path d="M109.65,53.48c0,0-0.01,0-0.01,0c0-0.07,0.01-0.14,0.01-0.21c0-9.55-7.74-17.3-17.3-17.3 c-1.23,0-2.43,0.13-3.58,0.38c-3.43-8.34-11.62-14.22-21.2-14.22c-7.19,0-13.6,3.32-17.8,8.5c-2.71-1.37-5.76-2.16-9-2.16 c-10.35,0-18.85,7.88-19.84,17.97C9.68,47.04,0.65,56.26,0.5,67.71C0.34,79.63,9.89,89.43,21.81,89.58 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,61.25,119.24,53.48,109.65,53.48 z" style="fill:#f1f4f8;width: 100%;"></path>
-                                            <path d="M119.85,56.79c3.93,3.97,1.15,13.07-1.55,16.04c-5.32,5.83-15.08,4.47-19,3.63 c-1.06-0.23-1.23-0.15-1.58,0.06c-0.31,0.19-0.45,0.49-0.79,1.2c-1.26,2.72-4.52,7.99-11.4,10.11c-7.17,2.21-13.93-1.16-17.09-3.17 c-1.2-0.76-1.25-0.78-1.79-0.77c-0.55,0.01-1.09,0.41-1.74,0.92c-2.86,2.25-9.39,6.22-19.46,5.64c-9.87-0.57-15.52-6.65-17.46-9.78 c-0.37-0.6-0.77-1.1-1.23-1.15c-0.53-0.05-1.12,0.49-1.56,0.93C21,84.54,7.78,85.77,3.4,78.8c4.46,7.15,11.35,10.69,18.42,10.78 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,65.73,124.44,59.97,119.85,56.79 z" style="fill:#B9CDD2;width: 100%;"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="cloud_3 start_pos" data-intersection-id="cloud_3" data-intersection-threshold="0.75">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" style="height: 128px;width: 128px;">
-                                            <path d="M109.65,53.48c0,0-0.01,0-0.01,0c0-0.07,0.01-0.14,0.01-0.21c0-9.55-7.74-17.3-17.3-17.3 c-1.23,0-2.43,0.13-3.58,0.38c-3.43-8.34-11.62-14.22-21.2-14.22c-7.19,0-13.6,3.32-17.8,8.5c-2.71-1.37-5.76-2.16-9-2.16 c-10.35,0-18.85,7.88-19.84,17.97C9.68,47.04,0.65,56.26,0.5,67.71C0.34,79.63,9.89,89.43,21.81,89.58 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,61.25,119.24,53.48,109.65,53.48 z" style="fill:#f8fafc;width: 100%;"></path>
-                                            <path d="M119.85,56.79c3.93,3.97,1.15,13.07-1.55,16.04c-5.32,5.83-15.08,4.47-19,3.63 c-1.06-0.23-1.23-0.15-1.58,0.06c-0.31,0.19-0.45,0.49-0.79,1.2c-1.26,2.72-4.52,7.99-11.4,10.11c-7.17,2.21-13.93-1.16-17.09-3.17 c-1.2-0.76-1.25-0.78-1.79-0.77c-0.55,0.01-1.09,0.41-1.74,0.92c-2.86,2.25-9.39,6.22-19.46,5.64c-9.87-0.57-15.52-6.65-17.46-9.78 c-0.37-0.6-0.77-1.1-1.23-1.15c-0.53-0.05-1.12,0.49-1.56,0.93C21,84.54,7.78,85.77,3.4,78.8c4.46,7.15,11.35,10.69,18.42,10.78 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,65.73,124.44,59.97,119.85,56.79 z" style="fill:#B9CDD2;width: 100%;"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="cta section">
+                <div class="container">
+                    <div class="cta-inner section-inner">
+                        <h3 class="section-title mt-0">Still not convinced on joining OCD?</h3>
+                        <div class="cta-cta">
+                            <a class="button button-primary button-wide-mobile" href="https://twitter.com/ocd_india">Get
+                                in touch</a>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div>
-                <div class="flex_row about_selected_member_social">   
-                    <a herf="#" class="about_social_icon">
-                        <img src="./assets/social-icons/linkedin.svg" />
-                    </a>
-                    
-                    <a herf="https://twitter.com/ocd_india" class="about_social_icon">
-                        <img src="./assets/social-icons/twitter.svg" />
-                    </a>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+                        <a href="/">
+                            <img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="https://twitter.com/ocd_india">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ's</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="https://twitter.com/ocd_india">
+                                <span class="screen-reader-text">Twitter</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"
+                                        fill="#0270D7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/ocd.india">
+                                <span class="screen-reader-text">Instagram</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18"
+                                    viewBox="0 0 24 24" style=" fill:#0270D7;">
+                                    <path
+                                        d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2022 Open Community of Developers, all rights reserved</div>
                 </div>
             </div>
-            <div class="about_selected_member_social">All Rights Reserved</div>
-            <div style="margin-top: 10px;">
-            <a href="mailto:nadavshaar@gmail.com" class="contact_value about_selected_member_social">ocd@gmail.com</a>
-            </div>
-            
         </footer>
-        <script src="js/intersection-observer.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+
 </html>
