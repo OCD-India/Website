@@ -16,6 +16,14 @@
     <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="shortcut icon" href="src/images/logo.ico" type="image/x-icon">
+<style>
+@media screen and (min-width: 640px) {
+    .btn-wdith-fix {
+        display:flex;
+        width:90%;
+    }
+}
+</style>
 </head>
 
 <body class="is-boxed has-animations">
@@ -45,9 +53,17 @@
                             <p class="hero-paragraph">OCD is a community driven organization which assists next
                                 generation leaders and communities to grow in India 🇮🇳</p>
 
-                            <div class="hero-cta"><a class="button button-primary"
-                                    href="https://bit.ly/ocd-india-phase-2">Register Now!</a><a class="button"
-                                    href="https://twitter.com/ocd_india">Get in touch</a></div>
+                            <div class="hero-cta">
+                                <a class="button button-primary button-shadow btn-wdith-fix"
+                                   style="margin-bottom:8px;"
+                                    href="https://bit.ly/ocd-india-phase-2">OCD Membership Registration</a>
+                                <a class="button button-shadow"
+                                   style="background-color:#02B69E"
+                                   href="https://lu.ma/event/evt-Xfu0IWSIGqGcacG">Huddles Registration</a>
+                                <a class="button"
+                                   style="background-color:#3D9CF5"
+                                   href="https://lu.ma/event/evt-3pmGNpFq65MKLp2">Call for Speakers</a>
+                            </div>
                         </div>
                         <div class="hero-figure anime-element">
                             <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -219,7 +235,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2022 Open Community of Developers, all rights reserved</div>
+                    <div class="footer-copyright">&copy; <script>document.write(new Date().getFullYear())</script> Open Community of Developers, all rights reserved</div>
                 </div>
             </div>
         </footer>
